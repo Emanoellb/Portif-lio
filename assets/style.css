@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #2C2A2A;
+}
+
+header {
+    box-shadow: 1px 1px 1px white;
+    font-family: "Quicksand", serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.page-information {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.img-information {
+    background-color: #aaa;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-information img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.text-information {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    color: white;
+}
+
+.information-name {
+    margin: 0 0 5px;
+    font-family: "Quicksand", serif;
+    font-weight: bold;
+}
+
+.information-student {
+    margin: 0 0 5px;
+    font-family: "Marvel", serif;
+    font-weight: 400;
+}
+
+.information-cite {
+    margin-top: 20px;
+    font-family: "Marvel", serif;
+    font-weight: 400;
+}
