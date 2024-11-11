@@ -4,12 +4,26 @@
     margin: 0;
     padding: 0;
     background-color: #2C2A2A;
+    box-sizing: border-box;
+    color: #fff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    transition: transform 0.3s ease-out;
+}
+
+
+
+/*-------------- Header -----------------*/
 header {
-    box-shadow: 1px 1px 1px white;
+    box-shadow: 1px 1px 1px solid;
     font-family: "Quicksand", serif;
-    font-weight: bold;
+    font-weight: 900;
     font-style: normal;
 }
 
@@ -39,18 +53,21 @@ header {
     color: #fff;
 }
 
+/*-------------- Primeira seção (Apresentação) -----------------*/
 .page-information {
+    width: 100%;
+    height: 80vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 5rem;
 }
+
 
 .img-information {
     background-color: #aaa;
     border-radius: 50%;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     overflow: hidden;
     position: relative;
 }
@@ -84,4 +101,40 @@ header {
     margin-top: 20px;
     font-family: "Marvel", serif;
     font-weight: 400;
+}
+
+/* ------ Segunda Seção (Skills) ------*/
+.skills {
+    width: 100%;
+    display: flex;
+    padding: 7rem 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headline-skills {
+    text-align: center;
+    font-family: "Quicksand", serif;
+}
+
+.headline-skills h2 {
+    font-size: 3rem;
+    margin-bottom: 0.3rem;
+}
+
+.headline-skills p {
+    margin-bottom: 2rem;
+}
+
+.conteudo-skills {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    width: 100%;
+}
+
+.img-skills {
+    width: 50px;
+    height: 50px;
 }
